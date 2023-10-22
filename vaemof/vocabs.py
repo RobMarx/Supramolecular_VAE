@@ -183,7 +183,7 @@ class SELFIESVocab(OneHotVocab):
 
     @classmethod
     def smiles_to_selfies_list(cls, smiles):
-        selfies_str = str(selfies.encoder(smiles, PrintErrorMessage=True))
+        selfies_str = str(selfies.encoder(smile))
         selfies_list = selfies_str.replace('[', '').split(']')[:-1]
         return selfies_list
 
